@@ -1,0 +1,62 @@
+body {
+  font-family: "Courier New", Courier, monospace;
+  background-image: url(/assets/topography.png);
+  margin: 0;
+}
+
+.sub-head {
+  font-family: "Montserrat", sans-serif;
+}
+
+h1 {
+  font-weight: 700;
+  margin-bottom: 1em;
+}
+
+h2 {
+  text-align: center;
+  font-weight: 700;
+}
+
+h3 {
+  color: #ff0099;
+}
+
+dt {
+  font-size: 1.4rem;
+  margin: 3em 0 0.8em;
+}
+
+#lines {
+  width: 100%;
+  display: inline-block;
+  text-align: center;
+  letter-spacing: 10px;
+  margin: 3em 0;
+}
+
+.navbar-toggler {
+  margin: 0.4em 0 0.4em;
+}
+
+#mainNavbar .nav-link {
+  text-transform: uppercase;
+  text-decoration: underline;
+  color: #ff0099;
+  font-size: 0.8rem;
+}
+
+#mainNavbar {
+  background-color: #333333;
+  padding: 0 10% 0;
+  margin: 0 auto 5em;
+}
+
+.container-fluid {
+  padding: 0 10% 0;
+}
+
+.lead {
+  font-size: 1.2rem;
+  line-height: 2;
+}
