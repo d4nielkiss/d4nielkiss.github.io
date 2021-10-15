@@ -1,0 +1,1 @@
+A simple HTML site to introduce myself. Styling made with CSS, Bootstrap, Fontawesome. Please visit [d4nielkiss.github.io](https://d4nielkiss.github.io) to see the final product.
