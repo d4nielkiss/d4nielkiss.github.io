@@ -1,16 +1,39 @@
-body {
-  font-family: "Courier New", Courier, monospace;
-  background-image: url(/assets/topography.png);
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
   margin: 0;
+  padding: 0;
 }
 
-.sub-head {
+body {
   font-family: "Montserrat", sans-serif;
+  background-image: url(/assets/wall.png);
+  color: #333333;
+}
+
+.icon {
+  color: #316077;
+}
+
+.nav-icon {
+  display: flex;
+  align-self: center;
+  font-size: 2rem;
+  align-items: center;
+  color: #6ba5c2;
+}
+
+.portret {
+  border-radius: 1rem;
+  object-fit: cover;
+  width: 100%;
+  height: 330px;
+  max-width: 600px;
 }
 
 h1 {
-  font-weight: 700;
-  margin-bottom: 1em;
+  margin-bottom: 1rem;
 }
 
 h2 {
@@ -19,20 +42,31 @@ h2 {
 }
 
 h3 {
-  color: #ff0099;
+  font-family: 'Courier New', Courier, monospace;
+  color: #6ba5c2;
+  margin-bottom: 2rem;
+  font-weight: bold;
 }
 
-dt {
-  font-size: 1.4rem;
-  margin: 3em 0 0.8em;
+aside {
+  width: 50%;
+  padding-right: 1rem;
 }
 
-#lines {
-  width: 100%;
-  display: inline-block;
-  text-align: center;
-  letter-spacing: 10px;
-  margin: 3em 0;
+article {
+  background-color:#eee3ce;
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+p {
+  font-size: 1.2rem;
+  line-height: 2rem;
+  margin-bottom: 3rem;
+}
+
+p:last-of-type {
+  margin-bottom: 0;
 }
 
 .navbar-toggler {
@@ -41,22 +75,54 @@ dt {
 
 #mainNavbar .nav-link {
   text-transform: uppercase;
-  text-decoration: underline;
-  color: #ff0099;
+  font-weight: bold;
+  color: #6ba5c2;
   font-size: 0.8rem;
 }
 
 #mainNavbar {
   background-color: #333333;
   padding: 0 10% 0;
-  margin: 0 auto 5em;
+  margin: 0 auto 8em;
 }
 
 .container-fluid {
   padding: 0 10% 0;
 }
 
-.lead {
+.skills {
+  font-family: 'Courier New', Courier, monospace;
+  padding-left: 2rem;
   font-size: 1.2rem;
-  line-height: 2;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  justify-content:end;
+  line-height: 2.2rem;
+}
+
+@media (max-width: 991px) {
+  aside {
+    text-align: center;
+    width: 100%;
+    padding-right: 0;
+    margin-bottom: 2rem;
+  }
+
+  .aside-container {
+    flex-direction: column;
+  }
+
+  .skills {
+    text-align: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 10px 30px;
+  }
+
+  p {
+    text-align: center;
+  }
+
 }

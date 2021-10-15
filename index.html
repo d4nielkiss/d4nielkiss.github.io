@@ -1,36 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-    <!-- Bootstrap CSS -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
       integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
       crossorigin="anonymous"
     />
-    <!-- Google Font -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="styles.css" />
-    <title>My first website</title>
+    <link rel="stylesheet" href="/styles.css" />
+    <title>Dániel Kiss</title>
   </head>
   <body>
     <nav id="mainNavbar" class="navbar navbar-expand-lg navbar-dark sticky-top">
       <div class="d-flex flex-grow-1">
-        <img
-          class="navbar-brand d-none d-inline-block"
-          src="/assets/aperture.svg"
-          alt="aperture-icon"
-        />
+        <span class="icon nav-icon">
+          <i class="fas fa-laptop-code"></i>
+        </span>
         <div class="w-100 text-right">
           <button
             class="navbar-toggler"
@@ -54,81 +44,55 @@
           </li>
           <li class="nav-item">
             <a
-              href="https://hu.wikipedia.org/" target="_blank"
-              class="sub-head nav-link m-2 menu-item"
-              >Wiki</a>
-          </li>
-          <li class="nav-item">
-            <a
-              href="https://www.github.com/" target="_blank"
-              class="sub-head nav-link m-2 menu-item"
+              href="https://www.github.com/d4nielkiss" target="_blank"
+              class="nav-link m-2 menu-item"
               >Github</a>
           </li>
           <li class="nav-item">
             <a
-              href="https://www.linkedin.com/" target="_blank"
+              href="https://www.linkedin.com/in/danielkiss2" target="_blank"
               class="sub-head nav-link m-2 menu-item"
               >Linkedin</a>
           </li>
         </ul>
       </div>
     </nav>
-    <div class="container-fluid">
-      <h1 class="sub-head">Kiss Dániel</h1>
-      <h3 class="sub-head">Leendő junior frontend fejlesztő</h3>
-      <p class="lead">
-        A 2020-as évben "Újratervezés Program" néven megszervezett, a Green Fox
-        Academy által megvalósuló programozó-alapozó képzésen veszek részt.
-        Bízom benne, hogy ezzel rengeteg hasznos tudást nyerek, és jól fogok
-        érteni a webfejlesztéshez.
-      </p>
+    <div class="aside-container container-fluid d-flex mb-5">
+      <aside class="d-flex flex-column">
+        <section>
+          <h1>Hi! I'm Dániel Kiss</h1>
+          <h3>Junior Full Stack Developer</h3>
+        </section>
+        <section>
+          <img class="portret" src="/assets/Kiss Dániel_minimalized.jpg" alt="portret">
+        </section>
+      </aside>
+      <ul class="skills">
+        <li><i class="fab fa-html5 icon"></i> HTML</li>
+        <li><i class="fab fa-css3-alt icon"></i> CSS</li>
+        <li><i class="fab fa-sass icon"></i> SCSS</li>
+        <li><i class="fab fa-js icon"></i> JavaScript</li>
+        <li><i class="fab fa-node icon"></i> Node JS, Express JS</li>
+        <li><i class="fab fa-react icon"></i> React</li>
+        <li><i class="fas fa-database icon"></i> MongoDB, Firebase</li>
+        <li><i class="fab fa-docker icon"></i> Docker</li>
+        <li><i class="fab fa-git-alt icon"></i> Git</li>
+      </ul>
     </div>
     <div class="container-fluid">
-      <span id="lines">---</span>
+      <article>
+        <p>
+          I'm Daniel from Budapest, Hungary, and I'm currently working on buildig up my web-development skills. I really enjoy learning JavaScript and frameworks like React, but also like working on the creative side of coding with SCSS.
+        </p>
+        <p>
+          What I love the most about programming is the fact that I can actually build something out of nothing, and people can use that to solve their problems with. It's really important to me to make something that I can see the benefits of, and it always gives me a genuine satisfaction when others take a look at my work and think it's 'cool'.
+        </p>
+        <p>
+          I know that this field is constantly evolving and there’s always something more to learn and to master, which I love. Learning about new technologies and frameworks is enjoyable and also exciting for me.
+        </p>
+      </article>
     </div>
-    <div class="container-fluid">
-      <h2 class="sub-head">Technology Wiki</h2>
-      <dl>
-        <dt class="sub-head">Aritmetikai-logikai egység</dt>
-        <dd class="lead">
-          Egy olyan idealizált vagy fizikai eszköz, ami logikai alapműveletet
-          valósít meg egy vagy több bináris bemeneten, és produkál egy bináris
-          kimenetet.
-        </dd>
-        <dt class="sub-head">ASCII</dt>
-        <dd class="lead">
-          Az angol neve American Standard Code for Information Interchange. A
-          számítógépek csak a számokat értik, így a 'a' vagy '@' karakterek
-          értelmezéséhez szükséges számosított értékeket írja le.
-        </dd>
-        <dt class="sub-head">RAM</dt>
-        <dd class="lead">
-          Egy véletlen elérésű írható–olvasható adattároló eszköz. Tárolja a CPU
-          által végrehajtandó programokat és a feldolgozásra váró adatokat. Egy
-          adott memóriarész elérésének gyorsasága független az
-          elhelyezkedésétől.
-        </dd>
-        <dt class="sub-head">Magas szintű programozási nyelv</dt>
-        <dd class="lead">
-          A számítástechnikában használt olyan, az ember által olvasható és
-          értelmezhető utasítások sorozata, amivel közvetlenül, vagy közvetve
-          (például: gépi kódra fordítás után) közölhetjük a számítógéppel egy
-          adott feladat elvégzésének módját.
-        </dd>
-        <dt class="sub-head">Domain Name System (DNS)</dt>
-        <dd class="lead">
-          Egy hierarchikus, nagymértékben decentralizált elnevezési rendszer
-          számítógépek, szolgáltatások, illetve az internetre vagy egy
-          magánhálózatra kötött bármilyen erőforrás számára.
-        </dd>
-        <dt class="sub-head">TCP/IP</dt>
-        <dd class="lead">
-          Egy alkalmazás protokoll elosztott, együttműködő és hipermédiás
-          információs rendszerek részére. A World Wide Web adatkommunikációjának
-          alapja. Ez az alapvető protokoll a hypertext cseréjére és mozgatására.
-        </dd>
-      </dl>
-    </div>
+    <script src="https://kit.fontawesome.com/611f36723b.js" crossorigin="anonymous"></script>
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
